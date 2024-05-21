@@ -21,7 +21,8 @@ const usersSlice = createSlice({
     })
 
     builder.addCase(fetchUsers.rejected, (state, action) => {
-      state.error = action.error
+      state.isLoading = false;
+      state.error = action.error;
       //Bu satırdan anlıyoruz ki, veri getirmede bir hata durumunda  error nesnesi action' ın error özelliğine atanıyor, payload' a değil. 
     })
   }
