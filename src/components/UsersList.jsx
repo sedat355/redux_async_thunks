@@ -12,7 +12,7 @@ const UsersList = () => {
   },[])
 
   if(isLoading) {
-    return <Skeleton times={4}/>
+    return <Skeleton times={4} className="h-10 w-full"/>
   }
 
   if(error) {
