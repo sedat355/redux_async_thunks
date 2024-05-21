@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  margin: 1rem;
+}
+button {
+  outline: none;
+  background-color: slategray;
+  cursor: pointer;
+  padding: .3em 1em;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+input {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: .3em;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
