@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchUsers } from '../store/thunks/fetchUsers';
+import Skeleton from './Skeleton';
 
 const UsersList = () => {
   const dispatch = useDispatch();
@@ -11,7 +12,7 @@ const UsersList = () => {
   },[])
 
   if(isLoading) {
-    return <div>Loading...</div>
+    return <Skeleton times={4}/>
   }
 
   if(error) {
@@ -20,7 +21,7 @@ const UsersList = () => {
 
   return (
     <ul>
-      {data.map(user => <li key={user.id}>{user.name}</li>)}
+      userlist
     </ul>
   )
 }
