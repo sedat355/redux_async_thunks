@@ -1,6 +1,37 @@
 {
   "users": [
-    {"id": 1, "name": "Myra"}
+    {
+      "id": "1",
+      "name": "Myra"
+    },
+    {
+      "id": "1347",
+      "name": "Amelia Schulist"
+    },
+    {
+      "id": "3c37",
+      "name": "Regina Willms"
+    },
+    {
+      "id": "dbc6",
+      "name": "Cora Cartwright"
+    },
+    {
+      "id": "55e6",
+      "name": "Rachel Miller"
+    },
+    {
+      "id": "ccb7",
+      "name": "Leona Christiansen"
+    },
+    {
+      "id": "d89f",
+      "name": "Kathleen VonRueden"
+    },
+    {
+      "id": "6e1f",
+      "name": "Jeannette Nitzsche"
+    }
   ],
   "albums": [],
   "photos": []
