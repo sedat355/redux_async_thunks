@@ -8,7 +8,7 @@ const ExpandablePanel = ({header, children}) => {
     <div className="mb-2 border rounded">
       <div className="flex gap-x-2 p-2 justify-between items-center ">
         {header}
-        <div onClick={() => setExpanded(!expanded)} className='cursor-pointer'>
+        <div onClick={() => setExpanded(!expanded)} className='cursor-pointer p-2'>
           {expanded ? <GoChevronDown/> : <GoChevronLeft/>}
         </div>
       </div>
