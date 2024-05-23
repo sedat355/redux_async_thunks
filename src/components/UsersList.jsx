@@ -5,6 +5,7 @@ import { addUser } from '../store/thunks/addUser';
 import Skeleton from './Skeleton';
 import Button from './Button'
 import useThunk from '../hooks/use-thunk';
+import UserListItem from './UserListItem';
 
 const UsersList = () => {
   const [ doFetchUsers, isLoadingUsers, loadingUsersError ] = useThunk(fetchUsers);
@@ -33,14 +34,7 @@ const UsersList = () => {
   } else {
     content = data.map(user => {
       return(
-        <div 
-          key={user.id}
-          className='mb-2 border rounded'  
-        >
-          <div className='flex p-2 justify-between items-center cursor-pointer'>
-            {user.name}
-          </div>
-        </div>
+        <UserListItem key={user.id} user={user}/>
       )
     })
   }
