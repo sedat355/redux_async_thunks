@@ -18,6 +18,11 @@
       "id": 10,
       "title": "Hiking Trip",
       "userId": "448a"
+    },
+    {
+      "id": "777d",
+      "userId": "448a",
+      "title": "Handmade Rubber Sausages"
     }
   ],
   "photos": []
