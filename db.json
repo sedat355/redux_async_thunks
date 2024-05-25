@@ -1,18 +1,24 @@
 {
   "users": [
     {
-      "id": "4113",
-      "name": "Jean Denesik"
+      "id": "05f6",
+      "name": "Alexandra Renner"
     },
     {
-      "id": "53e1",
-      "name": "Alan Hudson DDS"
+      "id": "448a",
+      "name": "Doyle Larson"
     },
     {
-      "id": "1f69",
-      "name": "Joel Macejkovic III"
+      "id": "c281",
+      "name": "Gail Hirthe"
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 10,
+      "title": "Hiking Trip",
+      "userId": "448a"
+    }
+  ],
   "photos": []
 }

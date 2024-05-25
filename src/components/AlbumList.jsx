@@ -1,8 +1,13 @@
 import React from 'react'
+import { useFetchAlbumsQuery } from '../store'
 
 const AlbumList = ({user}) => {
+  const { data, error, isLoading } = useFetchAlbumsQuery(user);
+
+  console.log(data, error, isLoading)
+  
   return (
-    <div>{user.name}</div>
+    <div>Albums for {user.name}</div>
   )
 }
 
