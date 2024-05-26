@@ -9,6 +9,13 @@ const photosApi = createApi({
   endpoints(builder) {
     return {
       fetchPhotos: builder.query({
+        providesTags: (result, error, album) => {
+          const tags = result.map(photo => {
+            return {type: 'Photo', id: photo.id}
+          });
+          tags.push({type: 'AlbumPhoto', id: album.id})
+          return tags;
+        },
         query: (album) => {
           return {
             url: '/photos',
@@ -19,8 +26,11 @@ const photosApi = createApi({
           };
         }
       }),
+
       addPhoto: builder.mutation({
-        //Bu api' de photos dizisinde işlemler yapıyoruz ve bu dizi photo nesnelerinden oluşuyor. Her photo nesnesinde, hangi albume ait olduğu bilgisini içeren yani o albumun id değerini içeren albumId özelliği var. yeni foto'yu hangi albume ekleyeceğimi bilmem lazım (yani yeni photo nesnesini oluştururken albumId değerine atayacağım album.id değerine erişebilmem lazım). Bu yüzden +Add Photo' ya tıklandığında album nesnesini buraya göndereceğiz. İşte tıklanınca gelen album nesnesinin kendi id değerini bu yeni photo nesnesinin albumId değerine atıyoruz. Böylece her photo nesnesi, hangi album nesnesine ait olduğu bilgisini albumId özelliğinde tutacak.
+        invalidatesTags: (result, error, album) => {
+          return [{type: 'AlbumPhoto', id: album.id}]
+        },
         query: (album) => {
           return {
             url: '/photos',
@@ -32,8 +42,11 @@ const photosApi = createApi({
           }
         }
       }),
+
       removePhoto: builder.mutation({
-        //deletePhoto' ya tıklandığında hangi photo' yu sileceğimi bilmem lazım. Her bir photo nesnesinin kendi benzersiz id değeri var. Bu yüzdden tıklanan photo nesnesini buraya gönderiyoruz ve photo.id değerini url' e ekliyoruz. Böylece doğru photo nesnesini silmiş olacağız.
+        invalidatesTags: (result, error, photo) => {
+          return [{type: 'Photo', id: photo.id}]
+        },
         query: (photo) => {
           return {
             url: `/photos/${photo.id}`,
