@@ -13,6 +13,17 @@
       "name": "Ms. Jerome Bogan"
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": "07e9",
+      "userId": "448a",
+      "title": "Bespoke Plastic Gloves"
+    },
+    {
+      "id": "5028",
+      "userId": "448a",
+      "title": "Incredible Frozen Computer"
+    }
+  ],
   "photos": []
 }
