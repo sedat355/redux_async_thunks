@@ -21,7 +21,7 @@ const AlbumList = ({user}) => {
   } else {
     content = data.map(album => {
       return (
-       <AlbumListItem key={album.id} album={album}/>
+       <AlbumListItem key={album.id} album={album} user={user}/>
       )
     })
   }

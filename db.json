@@ -13,17 +13,6 @@
       "name": "Ms. Jerome Bogan"
     }
   ],
-  "albums": [
-    {
-      "id": "de19",
-      "userId": "448a",
-      "title": "Luxurious Concrete Shirt"
-    },
-    {
-      "id": "e549",
-      "userId": "448a",
-      "title": "Generic Steel Computer"
-    }
-  ],
+  "albums": [],
   "photos": []
 }
