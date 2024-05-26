@@ -4,11 +4,11 @@ import Button from './Button'
 import { GoTrashcan } from 'react-icons/go'
 import { useRemoveAlbumMutation } from '../store'
 
-const AlbumListItem = ({album, user}) => {
+const AlbumListItem = ({album}) => {
   const [removeAlbum, results] = useRemoveAlbumMutation();
 
   const deleteAlbum = () => {
-    removeAlbum({album, user})
+    removeAlbum(album)
   }
 
   const header = (

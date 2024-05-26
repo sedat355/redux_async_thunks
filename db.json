@@ -5,14 +5,30 @@
       "name": "Doyle Larson"
     },
     {
-      "id": "63d3",
-      "name": "Gerald Langosh"
+      "id": "a15e",
+      "name": "Nora Reilly"
     },
     {
-      "id": "ab1f",
-      "name": "Ms. Jerome Bogan"
+      "id": "5ded",
+      "name": "Carlton Lueilwitz"
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": "183c",
+      "userId": "a15e",
+      "title": "Recycled Cotton Towels"
+    },
+    {
+      "id": "24ed",
+      "userId": "448a",
+      "title": "Unbranded Granite Shirt"
+    },
+    {
+      "id": "da8c",
+      "userId": "448a",
+      "title": "Refined Bronze Towels"
+    }
+  ],
   "photos": []
 }
