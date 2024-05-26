@@ -6,7 +6,7 @@ import Button from './Button';
 import AlbumListItem from './AlbumListItem';
 
 const AlbumList = ({user}) => {
-  const { data, error, isLoading } = useFetchAlbumsQuery(user);
+  const { data, error, isFetching } = useFetchAlbumsQuery(user);
   const [ addAlbum, results ] = useAddAlbumMutation();
   
   const handleAddAlbum = () => {
@@ -14,14 +14,14 @@ const AlbumList = ({user}) => {
   }
 
   let content;
-  if( isLoading ) {
+  if( isFetching ) {
     content = <Skeleton times={3} className="h-8 w-full"/>
   } else if( error ) {
     content = <div>Error loading albums!!</div>
   } else {
     content = data.map(album => {
       return (
-       <AlbumListItem key={album.id} album={album} user={user}/>
+       <AlbumListItem key={album.id} album={album}/>
       )
     })
   }
@@ -30,7 +30,7 @@ const AlbumList = ({user}) => {
     <div>
       <div className='flex flex-row items-center justify-between m-2'>
        <h3 className='text-lg font-bold'>Albums for {user.name}</h3>
-        <Button loading={results.isLoading} onClick={handleAddAlbum} success>
+        <Button loading={results.isFetching} onClick={handleAddAlbum} success>
           +Add Album
         </Button>
       </div>
