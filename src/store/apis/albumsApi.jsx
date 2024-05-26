@@ -24,12 +24,12 @@ const albumsApi = createApi({
     return {
       fetchAlbums: builder.query({
         providesTags: (result, error, user) => {
-          console.log('fetchAlbums-result: ',result)
+          //console.log('fetchAlbums-result: ',result)
           const tags = result.map((album) => {
             return { type: 'Album', id: album.id };
           });
           tags.push({type: 'UsersAlbums', id: user.id});
-          console.log('provides tags: ', tags)
+          //console.log('provides tags: ', tags)
           return tags;
         },
         query: (user) => {
@@ -44,7 +44,7 @@ const albumsApi = createApi({
       }),
       addAlbum: builder.mutation({
         invalidatesTags: (result, error, user) => {
-          console.log('addAlbums-result: ', result)
+          //console.log('addAlbums-result: ', result)
           return [{type:'UsersAlbums', id: user.id}];
         },
         query: (user) => {
@@ -60,7 +60,7 @@ const albumsApi = createApi({
       }),
       removeAlbum: builder.mutation({
         invalidatesTags: (result, error, album) => {
-          console.log('removeAlbum-result: ', result)
+          //console.log('removeAlbum-result: ', result)
           return [{type:'Album', id: album.id}];
         },
         query: (album) => {

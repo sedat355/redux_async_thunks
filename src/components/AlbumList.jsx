@@ -8,6 +8,8 @@ import AlbumListItem from './AlbumListItem';
 const AlbumList = ({user}) => {
   const { data, error, isFetching } = useFetchAlbumsQuery(user);
   const [ addAlbum, results ] = useAddAlbumMutation();
+
+  console.log(data)
   
   const handleAddAlbum = () => {
     addAlbum(user);  
@@ -30,7 +32,7 @@ const AlbumList = ({user}) => {
     <div>
       <div className='flex flex-row items-center justify-between m-2'>
        <h3 className='text-lg font-bold'>Albums for {user.name}</h3>
-        <Button loading={results.isFetching} onClick={handleAddAlbum} success>
+        <Button loading={results.isLoading} onClick={handleAddAlbum} success>
           +Add Album
         </Button>
       </div>

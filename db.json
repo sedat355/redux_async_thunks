@@ -11,6 +11,10 @@
     {
       "id": "ab1f",
       "name": "Ms. Jerome Bogan"
+    },
+    {
+      "id": "c82e",
+      "name": "Cody Ryan"
     }
   ],
   "albums": [
@@ -25,5 +29,51 @@
       "title": "Incredible Frozen Computer"
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "id": "c246",
+      "albumId": "07e9",
+      "url": "https://loremflickr.com/150/150/abstract?lock=86227"
+    },
+    {
+      "id": "73b1",
+      "albumId": "07e9",
+      "url": "https://loremflickr.com/150/150/abstract?lock=15214"
+    },
+    {
+      "id": "64c9",
+      "albumId": "07e9",
+      "url": "https://loremflickr.com/150/150/abstract?lock=84875"
+    },
+    {
+      "id": "f36b",
+      "albumId": "07e9",
+      "url": "https://loremflickr.com/150/150/abstract?lock=15065"
+    },
+    {
+      "id": "33a3",
+      "albumId": "07e9",
+      "url": "https://loremflickr.com/150/150/abstract?lock=53949"
+    },
+    {
+      "id": "81ff",
+      "albumId": "07e9",
+      "url": "https://loremflickr.com/150/150/abstract?lock=12320"
+    },
+    {
+      "id": "5e1a",
+      "albumId": "07e9",
+      "url": "https://loremflickr.com/150/150/abstract?lock=48937"
+    },
+    {
+      "id": "7aec",
+      "albumId": "07e9",
+      "url": "https://loremflickr.com/150/150/abstract?lock=16191"
+    },
+    {
+      "id": "d7b6",
+      "albumId": "07e9",
+      "url": "https://loremflickr.com/150/150/abstract?lock=29784"
+    }
+  ]
 }
