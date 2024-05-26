@@ -11,11 +11,15 @@
     {
       "id": "63d3",
       "name": "Gerald Langosh"
+    },
+    {
+      "id": "ab1f",
+      "name": "Ms. Jerome Bogan"
     }
   ],
   "albums": [
     {
-      "id": 10,
+      "id": "10",
       "title": "Hiking Trip",
       "userId": "448a"
     },
@@ -48,6 +52,31 @@
       "id": "de19",
       "userId": "448a",
       "title": "Luxurious Concrete Shirt"
+    },
+    {
+      "id": "fe95",
+      "userId": "05f6",
+      "title": "Electronic Soft Ball"
+    },
+    {
+      "id": "d5cc",
+      "userId": "05f6",
+      "title": "Elegant Rubber Shirt"
+    },
+    {
+      "id": "b94f",
+      "userId": "ab1f",
+      "title": "Gorgeous Metal Computer"
+    },
+    {
+      "id": "f389",
+      "userId": "ab1f",
+      "title": "Luxurious Granite Mouse"
+    },
+    {
+      "id": "3a18",
+      "userId": "05f6",
+      "title": "Fantastic Plastic Gloves"
     }
   ],
   "photos": []

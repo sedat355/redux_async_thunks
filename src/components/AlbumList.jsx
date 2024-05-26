@@ -14,7 +14,7 @@ const AlbumList = ({user}) => {
 
   let content;
   if( isLoading ) {
-    content = <Skeleton times={3}/>
+    content = <Skeleton times={3} className="h-8 w-full"/>
   } else if( error ) {
     content = <div>Error loading albums!!</div>
   } else {
@@ -31,9 +31,9 @@ const AlbumList = ({user}) => {
 
   return (
     <div>
-      <div>
-        Albums for {user.name}
-        <Button onClick={handleAddAlbum}>
+      <div className='flex flex-row items-center justify-between m-2'>
+       <h3 className='text-lg font-bold'>Albums for {user.name}</h3>
+        <Button loading={results.isLoading} onClick={handleAddAlbum} success>
           +Add Album
         </Button>
       </div>
