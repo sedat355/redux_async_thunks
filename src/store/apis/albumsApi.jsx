@@ -8,6 +8,7 @@ const pause = (duration) => {
     }, duration);
   })
 }
+
 const albumsApi = createApi({
   reducerPath: 'albums',
   baseQuery: fetchBaseQuery({
@@ -18,6 +19,7 @@ const albumsApi = createApi({
       return fetch(...args);
     }
    }),
+   
   endpoints(builder) {
     return {
       fetchAlbums: builder.query({
