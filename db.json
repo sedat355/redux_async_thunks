@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "id": "05f6",
-      "name": "Alexandra Renner"
-    },
-    {
       "id": "448a",
       "name": "Doyle Larson"
     },
@@ -19,69 +15,14 @@
   ],
   "albums": [
     {
-      "id": "10",
-      "title": "Hiking Trip",
-      "userId": "448a"
-    },
-    {
-      "id": "7845",
-      "userId": "448a",
-      "title": "Licensed Fresh Shirt"
-    },
-    {
-      "id": "f653",
-      "userId": "448a",
-      "title": "Recycled Rubber Fish"
-    },
-    {
-      "id": "5e33",
-      "userId": "448a",
-      "title": "Ergonomic Frozen Keyboard"
-    },
-    {
-      "id": "6b2e",
-      "userId": "448a",
-      "title": "Recycled Rubber Salad"
-    },
-    {
-      "id": "9d43",
-      "userId": "448a",
-      "title": "Luxurious Soft Chicken"
-    },
-    {
       "id": "de19",
       "userId": "448a",
       "title": "Luxurious Concrete Shirt"
     },
     {
-      "id": "fe95",
-      "userId": "05f6",
-      "title": "Electronic Soft Ball"
-    },
-    {
-      "id": "d5cc",
-      "userId": "05f6",
-      "title": "Elegant Rubber Shirt"
-    },
-    {
-      "id": "b94f",
-      "userId": "ab1f",
-      "title": "Gorgeous Metal Computer"
-    },
-    {
-      "id": "f389",
-      "userId": "ab1f",
-      "title": "Luxurious Granite Mouse"
-    },
-    {
-      "id": "3a18",
-      "userId": "05f6",
-      "title": "Fantastic Plastic Gloves"
-    },
-    {
-      "id": "cf85",
-      "userId": "05f6",
-      "title": "Practical Cotton Car"
+      "id": "e549",
+      "userId": "448a",
+      "title": "Generic Steel Computer"
     }
   ],
   "photos": []

@@ -45,7 +45,7 @@ const usersSlice = createSlice({
       state.isLoading = false
 
       //çıktıdan görüldüğü gibi removeUser' dan return edilen response.data değeri silinmek için tıklanan user. 
-      console.log(action.payload)//{id: '3399', name: 'Vivian Emmerich'}
+      //console.log(action.payload)//{id: '3399', name: 'Vivian Emmerich'}
       state.data = state.data.filter(user => user.id !== action.payload.id)
 
       //bu yöntem çalışmıyor:
